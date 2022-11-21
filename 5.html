@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shaking Effect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+            body {
+                background-image: linear-gradient(to left,green,blue);
+            }
+
+        h1 {
+            font-family: 'Acme', sans-serif;
+            font-size: 80px;
+            color: #000;
+            transform: skewX(-15deg);
+            text-shadow: 0 3px 5px #030303;
+            animation: shaking 0.6s 0s infinite alternate,
+                        changeColor 4.8s 0.1s ease-in-out infinite;
+        }
+
+        @keyframes shaking {
+            0% {
+                transform: skewX(-15deg);
+            }
+            5% {
+                transform: skewX(15deg);
+            }
+            10% {
+                transform: skewX(-15deg);
+            }
+            15% {
+                transform: skewX(15deg);
+            }
+            20% {
+                transform: skewX(-15deg);
+            }
+            25% {
+                transform: skewX(15deg);
+            }
+            30% {
+                transform: skewX(-15deg);
+            }
+            35% {
+                transform: skewX(15deg);
+            }
+            50% {
+                transform: skewX(0deg);
+            }
+            100% {
+                transform: skewX(0deg);
+            }
+        }
+
+        @keyframes changeColor {
+            0% {
+                color: #fff;
+            }
+            24% {
+                color: #fff;
+            }
+            25% {
+                color: #f05112;
+            }
+
+            49% {
+                color: #f05112;
+            }
+
+            50% {
+                color: #f029cf;
+            }
+
+            74% {
+                color: #f029cf;
+            }
+            75% {
+                color: #9cdf20;
+            }
+            99% {
+                color: #9cdf20;
+            }
+            100% {
+                color: #3253e2;
+            }
+        }
+    </style>
+<body>
+        <h1 align="center">OUR CONTACT INFORMATION</h1>
+        <br>
+        <br>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Prompt', sans-serif;
+            }
+    
+            body { background-color: #2A3950; }
+    
+            section {
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            ul {
+                list-style: none;
+                width: 250px;
+            }
+    
+            ul li {
+                width: 100%;
+                margin: 3px 0;
+                border-radius: 5px;
+                transition: 0.3s all ease;
+                background: linear-gradient(135deg, #fe9677, #f64668);
+            }
+    
+            ul li a {
+                display: block;
+                padding: 8px;
+                text-decoration: none;
+                font-size: 18px;
+                color: #fff;
+                overflow: hidden;
+                white-space: nowrap;
+                text-align: left;
+                letter-spacing: 1px;
+            }
+    
+            ul li:hover {
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+                transform: scale(1.2);
+            }
+    
+            ul li:hover a {
+                text-align: right;
+                animation: textAni 0.3s linear;
+            }
+    
+            @keyframes textAni {
+                0%, 100% {
+                    opacity: 1;
+                    letter-spacing: 1px;
+                }
+    
+                50% {
+                    opacity: 1;
+                    letter-spacing: 100px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <u><font face="times new roman" size="7" color="black"><p align="center"> CONTACT INFORMATION IF ALSO ONE OF THE IMPORTAINT THING.WITH THE HELP OF CONTACT INFORMATION WE CAN FOLLOW/FIND ANYONE <br> SO LET'S SEE SOME INFORMATION THAT HELPS YOU TO FINDING US. </p></font></u>
+        <br>
+        <br>
+            <ul align="center">
+                <li><a href="">OFFICIAL SITE OF B.S.S</a></li>
+                <li><a href="">MOBILE NUMBER</a></li>
+                <li><a href=""">YOUTUBE CHANNEL</a></li>
+                <li><a href="">INSTAGRAM</a></li>
+                <li><a href="">TWITTER</a></li>
+            </ul>
+</body>
+</html>
